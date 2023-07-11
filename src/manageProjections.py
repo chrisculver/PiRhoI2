@@ -198,13 +198,14 @@ class ManageRhoPi(GenericProjectors):
                 
     def rotate_basis2(self):
         for b in self.basis:
-            #print('rotating basis element b={}'.format(b))
+            print('rotating basis element b={}'.format(b))
             for g in self.group.elements:
                 op = self.prep_rhopi_rotation3(b)
                 #print('prepped op={}'.format(op))
                 rotatedOp = op.subs(rotation_group_subs(g)).doit()
                 #print('rotated op={}'.format(rotatedOp))
                 rotatedOp = self.rotatePolarizedRho(sp.expand(rotatedOp),g)
+                #print("rotated pol rho={}".format(rotatedOp))
                 self.rotatedBasis.append(rotatedOp)
                 
     def prep_rhopi_rotation1(self, expr):
@@ -262,7 +263,7 @@ class ManageRhoPi(GenericProjectors):
                     if(signFlip):
                         newT *= -1.0
         
-                    newT *= elem
+                newT *= elem
             #print("newT=",newT)
             return newT 
                 

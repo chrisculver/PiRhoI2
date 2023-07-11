@@ -62,8 +62,8 @@ def get_threepi_results(group,pTot,N,enCUT,mpi,L,eta,timed=False):
     for p1 in indicesUpTo(N):
         p1=np.array(p1)
         for p2 in indicesUpTo(N):
-            if (p1.tolist()==[0,0,0]) and (p2==[0,0,0]):
-                break
+            if (p1==np.array([0,0,0])).all() and (p2==np.array([0,0,0])).all():
+                continue
             p2=np.array(p2)
             p3=np.array([pTot[0],pTot[1],pTot[2]])-p1-p2
             en=EN_threepi(p1,p2,p3,mpi,L,eta)
