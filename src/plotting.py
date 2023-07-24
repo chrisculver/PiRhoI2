@@ -59,4 +59,4 @@ def nonint_plt(rhopiResults,threepiResults,irrep,basisCut=0,xRange=[2.9,7.1]):
     axTOP.set_ylim([0.1,0.9])
 #plt.text(3,0.8,ensemble+'-'+irrep,fontsize=20)
     
-    return plt
+    return fig, ax
