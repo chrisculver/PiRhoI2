@@ -198,7 +198,7 @@ class ManageRhoPi(GenericProjectors):
                 
     def rotate_basis2(self):
         for b in self.basis:
-            print('rotating basis element b={}'.format(b))
+            #print('rotating basis element b={}'.format(b))
             for g in self.group.elements:
                 op = self.prep_rhopi_rotation3(b)
                 #print('prepped op={}'.format(op))
@@ -271,7 +271,7 @@ class ManageRhoPi(GenericProjectors):
         elif isinstance(expr, sp.core.add.Add):
             for t in expr.args:
                 newT = 1.0
-                print('t={}'.format(t))
+                #print('t={}'.format(t))
                 for elem in t.args:
                     newRhoString = ''
                     oldRho = ''

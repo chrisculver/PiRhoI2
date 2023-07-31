@@ -68,7 +68,7 @@ def get_threepi_results(group,pTot,N,enCUT,mpi,L,eta,timed=False):
             p3=np.array([pTot[0],pTot[1],pTot[2]])-p1-p2
             en=EN_threepi(p1,p2,p3,mpi,L,eta)
             if(en<enCUT):
-                print('[{},{},{}]'.format(p1,p2,p3))
+                #print('[{},{},{}]'.format(p1,p2,p3))
                 #timer.start('running fixed seed')
                 threepi = ThreePiFixedSeed(group,[p1,p2,p3])
                 #threepi.run()
