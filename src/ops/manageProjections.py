@@ -1,6 +1,6 @@
 import FiniteVolumeGroups as fvg
-from quarkIsospin import *
-from projection_utils import *
+from src.ops.quarkIsospin import *
+from src.ops.projection_utils import *
 
 import sympy as sp
 import numpy as np

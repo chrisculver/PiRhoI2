@@ -1,5 +1,5 @@
-from manageProjections import *
-from three_pi import *
+from src.ops.manageProjections import *
+from src.ops.three_pi import *
 
 import math
 import sympy as sp

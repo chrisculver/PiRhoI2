@@ -1,6 +1,6 @@
-from quarkIsospin import *
-from projection_utils import *
-from manageProjections import Timer
+from src.ops.quarkIsospin import *
+from src.ops.projection_utils import *
+from src.ops.manageProjections import Timer
 
 import numpy as np
 import sympy as sp
