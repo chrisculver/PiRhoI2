@@ -1,0 +1,2 @@
+1.0|u,5,\delta_{ii},0 0 0,d|u,3,\delta_{ii},0 0 0,d
+-1.0|d,5,\delta_{ii},0 0 1,d|u,5,\delta_{ii},0 0 0,d|u,5,\delta_{ii},0 0 -1,d+1.0|d,5,\delta_{ii},0 0 -1,d|u,5,\delta_{ii},0 0 0,d|u,5,\delta_{ii},0 0 1,d+-1.0|u,5,\delta_{ii},0 0 0,d|u,5,\delta_{ii},0 0 1,d|u,5,\delta_{ii},0 0 -1,u+1.0|u,5,\delta_{ii},0 0 0,d|u,5,\delta_{ii},0 0 -1,d|u,5,\delta_{ii},0 0 1,u
